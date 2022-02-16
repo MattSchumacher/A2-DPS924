@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="main_btn_manager">manager</string>
+    <string name="main_btn_buy">buy</string>
+    <string name="main_tv_product">Product Type</string>
+    <string name="main_tv_quantity">Quantity</string>
+    <string name="main_tv_total">Total</string>
+    <string name="manager_btn_stock">restock</string>
+    <string name="manager_btn_history">history</string>
+    <string name="restock_number_hint">Enter New Quantity</string>
+    <string name="restock_btn_ok">ok</string>
+    <string name="restock_btn_cancel">cancel</string>
+</resources>

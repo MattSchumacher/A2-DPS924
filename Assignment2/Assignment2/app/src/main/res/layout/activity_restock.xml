@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestockActivity">
+
+    <EditText
+        android:id="@+id/restock_et_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/restock_number_hint"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/restock_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="onOkClick"
+        android:text="@string/restock_btn_ok"
+        app:layout_constraintStart_toStartOf="@+id/restock_et_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/restock_et_quantity"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/restock_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onCancelClick"
+        android:text="@string/restock_btn_cancel"
+        app:layout_constraintStart_toEndOf="@+id/restock_btn_ok"
+        app:layout_constraintTop_toBottomOf="@+id/restock_et_quantity"
+        tools:ignore="TextContrastCheck" />
+
+    <ListView
+        android:id="@+id/restock_lv_items"
+        android:layout_width="403dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restock_btn_ok" />
+</androidx.constraintlayout.widget.ConstraintLayout>
