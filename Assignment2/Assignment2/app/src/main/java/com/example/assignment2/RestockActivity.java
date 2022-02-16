@@ -66,7 +66,7 @@ public class RestockActivity extends AppCompatActivity {
 
     public void onOkClick(View _) {
         String quantityContent = quantityEditText.getText().toString();
-        if (quantityContent.isEmpty() || selectedProduct == null){
+        if (quantityContent.isEmpty() || selectedProduct == null || quantityContent.contentEquals("0")){
             String text = "All fields are REQUIRED!";
 
             Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
