@@ -73,7 +73,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
         nameTextView.setText(historyItem.name);
 
         TextView priceTextView = holder.priceTextView;
-        priceTextView.setText(String.format("%.2f", historyItem.price));
+        priceTextView.setText(String.format("%.2f", historyItem.price * historyItem.quantity));
 
         TextView quantityTextView = holder.quantityTextView;
         quantityTextView.setText(String.valueOf(historyItem.quantity));

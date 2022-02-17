@@ -13,7 +13,7 @@ public class HistoryManager {
 
     public void addHistory(Product product, Integer quantity) {
         // update the price
-        product.price = product.price * quantity;
+
 
         History newHistory = new History(currentId, product, quantity);
         allHistory.add(newHistory);
